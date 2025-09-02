@@ -10,45 +10,31 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-header {
+.header {
   width: 100%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  padding: 0 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
-}
-
-.nav__item {
-  margin-right: 20px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
 
 .logo img {
   display: block;
   height: 40px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav li:last-child {
-  margin-right: 0;
 }
 
 .nav__link {
