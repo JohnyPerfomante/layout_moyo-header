@@ -13,6 +13,7 @@ header {
   background: #fff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
   padding: 0 50px;
 }
@@ -30,25 +31,20 @@ header {
   height: 40px;
 }
 
-nav {
-  margin-left: auto;
-}
-
 nav ul {
   display: flex;
   list-style: none;
-  margin-left: 60px;
 }
 
 nav li {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 nav li:last-child {
   margin-right: 0;
 }
 
-nav a {
+.nav__link {
   display: inline-block;
   height: 80px;
   line-height: 80px;
@@ -57,23 +53,25 @@ nav a {
   font-weight: 500;
   position: relative;
   transition: color 0.2s;
+  font-size: 12px;
 }
 
-nav a:hover {
+.nav__link:hover,
+.nav__link[data-qa]:hover {
   color: #00acdc;
 }
 
-nav a.is-active {
+.nav__link.is-active {
   color: #00acdc;
 }
 
-nav a.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 5px;
-  border-radius: 10px;
+  height: 4px;
+  border-radius: 8px;
   background-color: #00acdc;
 }
