@@ -16,6 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
   padding: 0 50px;
 }
 
@@ -30,13 +31,6 @@ header {
 
 .nav__item:last-child {
   margin-right: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
 .logo img {
